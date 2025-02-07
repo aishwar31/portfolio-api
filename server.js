@@ -18,7 +18,7 @@ app.use(cors({ origin: "http://localhost:4200" }));
 // });
 
 const db = mysql.createConnection({
-    host: "https://latitude-winston-pollution-mon.trycloudflare.com",
+    host: "https://know-tests-cooler-energy.trycloudflare.com",
     user: "root",
     password: "root",
     database: "port_db",
