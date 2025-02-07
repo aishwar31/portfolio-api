@@ -9,21 +9,21 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(cors({ origin: "http://localhost:4200" }));
 
-const db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "root",
-    database: "port_db",
-    port: 3310
-});
-
 // const db = mysql.createConnection({
-//     host: "sql109.infinityfree.com",
-//     user: "if0_38262385",
-//     password: "AishwaryVasu99",
-//     database: "if0_38262385_portfolio_db",
-//     port: 3306
+//     host: "localhost",
+//     user: "root",
+//     password: "root",
+//     database: "port_db",
+//     port: 3310
 // });
+
+const db = mysql.createConnection({
+    host: "sql109.infinityfree.com",
+    user: "if0_38262385",
+    password: "AishwaryVasu99",
+    database: "if0_38262385_portfolio_db",
+    port: 3306
+});
 
 db.connect((err) => {
     if (err) {
