@@ -9,6 +9,12 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(cors({ origin: "http://localhost:4200" }));
 
+console.log("DB_HOST:", process.env.DATABASE_HOST);
+console.log("DB_USER:", process.env.DATABASE_USER);
+console.log("DB_PASSWORD:", process.env.DATABASE_PASSWORD ? "********" : "MISSING");
+console.log("DB_DATABASE:", process.env.DATABASE_NAME);
+console.log("DB_PORT:", process.env.DB_PORT);
+
 // const db = mysql.createConnection({
 //     host: "localhost",
 //     user: "root",
