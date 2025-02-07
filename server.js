@@ -18,11 +18,11 @@ app.use(cors({ origin: "http://localhost:4200" }));
 // });
 
 const db = mysql.createConnection({
-    host: "https://know-tests-cooler-energy.trycloudflare.com",
-    user: "root",
-    password: "root",
-    database: "port_db",
-    port: 3310
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_DATABASE,
+    port: process.env.DB_PORT
 });
 
 db.connect((err) => {
