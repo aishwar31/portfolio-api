@@ -18,11 +18,11 @@ app.use(cors({ origin: "http://localhost:4200" }));
 // });
 
 const db = mysql.createConnection({
-    host: "sql109.infinityfree.com",
-    user: "if0_38262385",
-    password: "AishwaryVasu99",
-    database: "if0_38262385_portfolio_db",
-    port: 3306
+    host: "https://latitude-winston-pollution-mon.trycloudflare.com",
+    user: "root",
+    password: "root",
+    database: "port_db",
+    port: 3310
 });
 
 db.connect((err) => {
