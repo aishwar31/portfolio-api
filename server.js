@@ -2,7 +2,7 @@ const express = require("express");
 const mysql = require("mysql2");
 const cors = require("cors");
 const bodyParser = require("body-parser");
-require('dotenv').config({ path: '/etc/secrets/.env' });
+require('dotenv').config();
 
 const app = express();
 app.use(cors());
@@ -61,6 +61,6 @@ app.post("/contact", (req, res) => {
 });
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server is running on port ${PORT}`);
 });
