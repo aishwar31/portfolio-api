@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "Portfolio Website",
+        "description": "My personal portfolio website.",
+        "image": "assets/project1.jpg",
+        "link": "#"
+    },
+    {
+        "id": 2,
+        "name": "E-commerce App",
+        "description": "An online store built with Angular & Node.js.",
+        "image": "assets/project2.jpg",
+        "link": "#"
+    }
+]
